@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Perjalanan Solo Touring</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">Perjalanan Solo Touring</h1>
+                <p class="site-subtitle">Menjelajahi Dunia Sendiri, Menemukan Diri yang Sesungguhnya</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="form.html" class="nav-link active"><i class="fas fa-edit"></i> Form</a></li>
+                    <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+        <section class="form-intro">
+            <h2 class="section-title">Bagikan Pengalaman Touring Anda</h2>
+            <p>Apakah Anda memiliki pengalaman touring yang menarik? Ingin berbagi cerita atau rencana perjalanan? Silakan isi form di bawah ini. Pengalaman Anda dapat menginspirasi traveler lain!</p>
+        </section>
+
+        <section class="form-section">
+            <form id="touring-form" class="touring-form">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap Anda">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Alamat Email</label>
+                    <input type="email" id="email" name="email" required placeholder="nama@contoh.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="destination"><i class="fas fa-map-marker-alt"></i> Tujuan Touring</label>
+                    <input type="text" id="destination" name="destination" required placeholder="Contoh: Bali, Yogyakarta, Lombok, dll.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="travel-date"><i class="fas fa-calendar-alt"></i> Tanggal Perjalanan</label>
+                    <input type="date" id="travel-date" name="travel-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="vehicle"><i class="fas fa-motorcycle"></i> Kendaraan yang Digunakan</label>
+                    <select id="vehicle" name="vehicle" required>
+                        <option value="" disabled selected>Pilih jenis kendaraan</option>
+                        <option value="metic">Motor Matic</option>
+                        <option value="sport">Motor Sport</option>
+                        <option value="trail">Motor Trail</option>
+                        <option value="cruiser">Motor Cruiser</option>
+                        <option value="adventure">Motor Adventure</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience"><i class="fas fa-edit"></i> Pengalaman / Kesan</label>
+                    <textarea id="experience" name="experience" rows="6" required placeholder="Ceritakan pengalaman touring Anda, tantangan yang dihadapi, atau rencana perjalanan yang akan dilakukan..."></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Saya ingin menerima informasi seputar touring dan petualangan</label>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Kirim Pengalaman</button>
+                    <button type="reset" class="btn-reset"><i class="fas fa-redo"></i> Reset Form</button>
+                </div>
+            </form>
+            
+            <div class="form-notification" id="form-notification">
+                <!-- Notifikasi akan muncul di sini setelah form dikirim -->
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="copyright">Copyright © Ahmad Hafizh - 251011700230 - 01SIFP004</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
